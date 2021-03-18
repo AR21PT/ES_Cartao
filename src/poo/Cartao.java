@@ -1,5 +1,18 @@
 package poo;
 
+/**
+ * A classe Cartão contém métodos para realizar operações básicas
+ * 
+ * <ul>
+ * <li> retirarServico </li>
+ * <li> atribuirNovoServico </li>
+ * <li> promoverNovoCargo </li>
+ * <li> despedirFuncionario </li>
+ * </ul>
+ * 
+ * @author AR21PT
+ *
+ */
 public class Cartao {
 	
 	private String nomeFuncionario;
@@ -34,20 +47,39 @@ public class Cartao {
 	}
 	
 	// Métodos
+	
+	
+	/**
+	 * Retirar o funcionário do serviço
+	 */
 	public void retirarServico() {
 		// servico = "";
 		setServico("");
 	}
+	
+	/**
+	 * Atribuir um novo serviço ao funcionário;
+	 * @param novoServico
+	 */
 	
 	public void atribuirNovoServico( String novoServico ) {
 		//servico = novoServico;
 		setServico( novoServico );
 	}
 	
+	/**
+	 * Promover o funcionário a um novo cargo;
+	 * @param novoCargo
+	 */
+	
 	public void promoverNovoCargo( String novoCargo ) {
 		//cargo = novoCargo;
 		setCargo(novoCargo);
 	}
+	
+	/**
+	 * Despedir um funcionário (ficar sem serviço e sem cargo).
+	 */
 	
 	public void despedirFuncionario() {
 		retirarServico();
